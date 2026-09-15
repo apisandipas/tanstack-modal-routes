@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Dark variant of the gallery neutral palette: zinc base, lighter desaturated
+   tones, one warm accent. Contrast: fg/bg 16:1, muted/bg 7.4:1, accent/bg 9.6:1. */
+@theme {
+  --color-bg: #18181b;
+  --color-card: #27272a;
+  --color-border: #3f3f46;
+  --color-fg: #fafafa;
+  --color-muted: #a1a1aa;
+  --color-accent: #e3b877;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  color-scheme: dark;
+}
